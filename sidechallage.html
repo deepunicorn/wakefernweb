@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta Charset = "utf-8">
+        <title>Wakefern Feedback Form</title>
+            <link rel = "stylesheet" href = "main.css">
+    </head>
+
+<div class="everything">
+
+    <div class = imgoverlay></div>
+
+
+    <div class = "bodiesTotal">
+
+        <div class = "bodyone">
+            <body>
+                 <div class = "Contact">
+
+                    <h2 align="center">Contact Us</h2>
+                    <p align="center"><a href = "https://www2.wakefern.com/">Our Website</a></p>
+                    <p align="center">Phone number: +1 (908) 527-3300</p>
+                    
+                 </div>
+            </body>
+        </div>
+
+        <div class="Feedback">
+            <body>
+                <h2>Wakefern Food Corp. Feedback Form</h2>
+                <div class="midtext"><p> Thank you for shopping with us, your feedback is greatly appreciated!</p></div>
+
+                
+                <form action="https://sheetdb.io/api/v1/vyneynaaa2jup" method = "POST" id = "sheetdb-form">
+                    <div class="middletext"><p><i>For any questions, inquiries, or comments please input your information below so we can get back to you as soon as possible!</i></p></div>
+                    <p> First and Last Name:</p>
+                    <input name = "data[Name]">
+                    <p> Email Address:</p>
+                    <input type="text"id  ="email" name = "data[Email]">
+                    <p>Phone Number:</p>
+                    <p><i>(xxx-xxx-xxxx)</i></p>
+                    <input name = "data[Phone Number]">
+                    <p>Why are you filling out this form?</p>
+                    <input type = "radio" id = "question" name = "data[Reason]" value = "Question">
+                    <label for = "question">Question</label> <br>
+                    <input type = "radio" id = "suggestion" name = "data[Reason]" value = "Suggestion">
+                    <label for = "suggestion">Suggestion</label> <br>
+                    <input type = "radio" id = "concern" name = "data[Reason]" value = "Concern">
+                    <label for = "concern">Concern</label> <br>
+                    <label for = "other"> 
+                    <input type = "radio" id = "other" name = "data[Reason]" value="Other"> Other
+                    </label>
+
+                    <input type = "text" id = "other_text" name = "data[If Other]">
+                    <br>
+                    <br>
+                    Comment : <br>
+                    <TEXTAREA rows = "6" cols = "50" name = "data[Comment]"></TEXTAREA>
+                    <br> <br>
+
+                    <div class ="buttonfont">
+                        <button class="button">Submit</button>
+                    <br> <br> 
+
+
+                </form>
+
+                <body>
+                    Store Management: For follow up action and customer contact click <a href = "https://docs.google.com/spreadsheets/d/1xAGI2IEOdRhLlOweqWAqyLbOzhwISkNFk-hqj_lcHdc/edit#gid=0">here!</a>
+                        <script>
+                        var form = document.getElementById('sheetdb-form');
+                        form.addEventListener("submit", e => {
+                        e.preventDefault();
+                        fetch(form.action, {
+                        method : "POST",
+                        body: new FormData(document.getElementById("sheetdb-form")),
+                        }).then(
+                        response => response.json()
+                        ).then((html) => {
+                        alert('Thank you for your submission! Your input is greatly valued.')
+                        });
+                        });
+                        </script>
+                        
+                </body>
+
+            </body>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+   
+
+    
+</html>

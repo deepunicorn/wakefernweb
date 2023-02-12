@@ -1,0 +1,110 @@
+.everything
+{
+    font-family: 'Montserrat', Arial, sans-serif;
+    width: 50% auto; 
+    height: fit-content;
+    background-color: #f4f3f3;
+    border: 1px solid;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 4px 4px 100000px;
+    border-radius: 40px;
+
+}
+
+.headertitle
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.bodiesTotal
+{
+    display: flex;
+    width: auto;
+
+}
+
+.middletext
+{
+    margin-right: 100px;
+}
+
+
+
+.bodyone
+{
+    width: fit-content;
+    height: auto; 
+    box-sizing: border-box;
+    width: 37%; 
+
+    padding-left: 10px;
+
+    background-image: url("bkgcolors.PNG");
+    background-size: 480px;
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-clip: border-box;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    
+}
+
+.imgoverlay
+{
+    width:max-content;    
+    height: max-content;
+    background-color: rgb(49, 49, 49);
+    opacity: 10%;
+
+}
+
+.Contact
+{
+    z-index: 1;
+}
+
+.midtext
+{
+    font-style: italic;
+}
+
+
+
+
+.Feedback
+{
+    width: 63%;
+    height: fit-content;
+    position: relative; 
+    padding-left: 30px;     
+}
+
+.button {
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+  }
+
+  .button:hover {
+    background: #474544;
+    color: #F2F3EB;
+  }
+
+
+
